@@ -13,8 +13,8 @@ function BlackIconWrapper({ icon, ...rest }) {
   return (
     <IconWrapper
       icon={icon}
-      bgColor='bg-[#264653]'
-      textColor='text-[#E76F51]'
+      bgColor='bg-gradient-to-br from-slate-800 to-slate-700'
+      textColor='text-orange-400 hover:text-orange-300'
       {...rest}
     />
   )
@@ -24,8 +24,8 @@ function RedIconWrapper({ icon, ...rest }) {
   return (
     <IconWrapper
       icon={icon}
-      bgColor='bg-[#E9C46A]'
-      textColor='text-[#2A9D8F]'
+      bgColor='bg-gradient-to-br from-amber-400 to-yellow-400'
+      textColor='text-teal-600 hover:text-teal-700'
       {...rest}
     />
   )
@@ -35,9 +35,9 @@ function IconWrapper({ icon, bgColor, textColor, target, isEmail }) {
   return (
     <a
       href={isEmail ? `mailto:${target}` : target}
-      className={`w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ${bgColor} flex items-center justify-center text-3xl transition-all hover:text-4xl cursor-pointer border border-black`}
+      className={`w-20 h-20 md:w-14 md:h-14 lg:w-20 lg:h-20 ${bgColor} flex items-center justify-center text-3xl transition-all hover:scale-110 hover:shadow-xl cursor-pointer border-2 border-slate-800 rounded-xl`}
     >
-      <FontAwesomeIcon icon={icon} className={textColor} />
+      <FontAwesomeIcon icon={icon} className={`${textColor} transition-colors duration-300`} />
     </a>
   )
 }
@@ -173,13 +173,13 @@ export default function Contact() {
       <div className='grid grid-cols-3 gap-3 md:w-1/2'>
         <BlackIconWrapper
           icon={faInstagram}
-          target='https://www.instagram.com/thecodedose/'
+          target='https://www.instagram.com/shakeer.samanthapudi/'
         />
-        <RedIconWrapper icon={faXTwitter} target="https://x.com/thecodedose" />
-        <BlackIconWrapper icon={faYoutube} target="https://www.youtube.com/channel/UCUqYu_GiAzFL4ErDEiK9xbA" />
-        <RedIconWrapper icon={faLinkedinIn} target="https://www.linkedin.com/in/ihsavru/" />
-        <BlackIconWrapper icon={faGithub} target="https://github.com/thecodedose"  />
-        <RedIconWrapper icon={faEnvelope} target="urvashi@thecodedose.com" isEmail />
+        <RedIconWrapper icon={faXTwitter} target="https://x.com/shakeersamantha" />
+        <BlackIconWrapper icon={faYoutube} target="https://www.youtube.com/@shakeersamanthapudi" />
+        <RedIconWrapper icon={faLinkedinIn} target="https://www.linkedin.com/in/shakeer-samanthapudi/" />
+        <BlackIconWrapper icon={faGithub} target="https://github.com/Samanthapudi-Shakeer"  />
+        <RedIconWrapper icon={faEnvelope} target="shakeer.samanthapudi@gmail.com" isEmail />
       </div>
     </>
   )

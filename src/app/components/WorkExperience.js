@@ -928,8 +928,8 @@ export default function WorkExperience() {
         </g>
       </svg>
 
-      <div className='hover:scale-105 transition-all cursor-pointer lg:absolute lg:left-1/2 lg:-translate-x-1/2 text-center bg-[#264653] border border-black font-bold w-fit px-5 py-2 m-3'>
-        <h2 className='font-neutral-900 text-4xl lg:text-5xl text-[#E9C46A]'>
+      <div className='hover:scale-110 transition-all duration-300 cursor-pointer lg:absolute lg:left-1/2 lg:-translate-x-1/2 text-center bg-gradient-to-r from-slate-800 to-slate-700 border-2 border-slate-800 font-bold w-fit px-5 py-2 m-3 rounded-lg shadow-lg hover:shadow-xl'>
+        <h2 className='text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-300'>
           Work Experience
         </h2>
       </div>

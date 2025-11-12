@@ -292,8 +292,8 @@ export default function Projects() {
         </g>
       </svg>
 
-      <div className='cursor-pointer hover:scale-105 transition-all lg:absolute bottom-3 bg-[#264653] w-fit px-5 py-2 m-3 border border-black'>
-        <h2 className='font-neutral-900 text-3xl font-bold text-[#E9C46A]'>
+      <div className='cursor-pointer hover:scale-110 transition-all duration-300 lg:absolute bottom-3 bg-gradient-to-r from-slate-800 to-slate-700 w-fit px-5 py-2 m-3 border-2 border-slate-800 rounded-lg shadow-lg hover:shadow-xl'>
+        <h2 className='font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300'>
           Projects
         </h2>
       </div>

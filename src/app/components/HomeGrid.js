@@ -12,10 +12,10 @@ import { GRIDS } from "../constants"
 
 export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
   const [nameIdx, setNameIdx] = useState(0)
-  const name = "Urvashi".split("")
+  const name = "Shakeer Samanthapudi".split("")
 
   const [subheadingIdx, setSubheadingIdx] = useState(0)
-  const subheading = "Creative Web Developer, Content Creator".split("")
+  const subheading = "AI/ML Engineer | Data Science Enthusiast".split("")
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -43,14 +43,14 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
   })
 
   return (
-    <animated.div className='grid grid-cols-1 md:grid-cols-9 md:grid-rows-9 w-screen md:h-screen p-5 gap-5 bg-stone-200'>
+    <animated.div className='grid grid-cols-1 md:grid-cols-9 md:grid-rows-9 w-screen md:h-screen p-5 gap-5 bg-gradient-to-br from-slate-50 to-blue-50'>
       <animated.div
         style={animatedStyles}
         className='row-start-5 md:row-span-6 md:col-span-3'
       >
         <animated.div
           style={trails[1]}
-          className='relative bg-[#F4A261] border border-black h-full w-full'
+          className='relative bg-gradient-to-br from-orange-400 to-orange-500 border-2 border-slate-800 h-full w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
           onClick={() => setCurrentGrid(GRIDS[2])}
         >
           <WorkExperience />
@@ -63,7 +63,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
         <animated.div
           onClick={() => setCurrentGrid(GRIDS[1])}
           style={trails[3]}
-          className='relative h-full w-full bg-[#2A9D8F] border border-black'
+          className='relative h-full w-full bg-gradient-to-br from-teal-400 to-cyan-500 border-2 border-slate-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
         >
           <Projects />
         </animated.div>
@@ -74,7 +74,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[2]}
-          className='relative h-full w-full border border-neutral-900 bg-[#9ad1ea]'
+          className='relative h-full w-full border-2 border-slate-800 bg-gradient-to-br from-blue-300 to-blue-400 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
         >
           <Education />
         </animated.div>
@@ -85,18 +85,18 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[0]}
-          className='h-full w-full p-10 bg-[#e9c46a] border border-black flex flex-col items-center justify-center gap-3'
+          className='h-full w-full p-10 bg-gradient-to-br from-amber-300 via-yellow-300 to-amber-400 border-2 border-slate-800 rounded-xl flex flex-col items-center justify-center gap-3 shadow-xl'
         >
-          <div className='border border-neutral-900 bg-[#264653]  w-fit px-5 py-3'>
-            <span className='text-5xl font-bold' id='home'>
+          <div className='border-2 border-slate-800 bg-gradient-to-r from-slate-800 to-slate-700 w-fit px-5 py-3 rounded-lg shadow-lg'>
+            <span className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-200' id='home'>
               {name.slice(0, nameIdx).join("")}
-              <span className='inline-block mx-2 w-6 h-1 bg-[#2A9D8F] animate-pulse'></span>
+              <span className='inline-block mx-2 w-6 h-1 bg-teal-400 animate-pulse rounded'></span>
             </span>
           </div>
-          <div className='border text-center border-neutral-900 bg-[#264653] w-fit px-5 py-2'>
-            <span className='md:text-md'>
+          <div className='border-2 text-center border-slate-800 bg-gradient-to-r from-slate-800 to-slate-700 w-fit px-5 py-2 rounded-lg shadow-lg'>
+            <span className='md:text-md text-amber-300'>
               {subheading.slice(0, subheadingIdx).join("")}
-              <span className='inline-block w-3 h-0.5 mx-1 bg-[#2A9D8F] animate-pulse'></span>
+              <span className='inline-block w-3 h-0.5 mx-1 bg-teal-400 animate-pulse rounded'></span>
             </span>
           </div>
         </animated.div>
@@ -107,7 +107,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[4]}
-          className='h-full w-full relative border border-neutral-900 bg-[#2A9D8F]'
+          className='h-full w-full relative border-2 border-slate-800 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
         >
           <Blog />
         </animated.div>
@@ -118,7 +118,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[5]}
-          className='h-full w-full relative border border-neutral-900 bg-[#2A9D8F]'
+          className='h-full w-full relative border-2 border-slate-800 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
         >
           <Resume />
         </animated.div>
@@ -129,7 +129,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[4]}
-          className='h-full w-full md:flex justify-between items-center p-10 gap-5 bg-[#94d1ee] border border-black'
+          className='h-full w-full md:flex justify-between items-center p-10 gap-5 bg-gradient-to-br from-sky-300 to-blue-400 border-2 border-slate-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300'
         >
           <Contact />
         </animated.div>
@@ -140,7 +140,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
       >
         <animated.div
           style={trails[6]}
-          className='h-full w-full relative border border-neutral-900 bg-[#F4A261]'
+          className='h-full w-full relative border-2 border-slate-800 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]'
         >
           <Misc />
         </animated.div>
